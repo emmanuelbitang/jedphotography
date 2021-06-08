@@ -1,0 +1,17 @@
+.bg-styles {
+  padding: 20px 50px 20px;
+}
+
+.MuiGridListTile-imgFullWidth {
+  filter: grayscale();
+}
+
+.MuiGridListTile-imgFullWidth:hover {
+  filter: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  img.MuiGridListTile-imgFullWidth {
+    width: 60%;
+  }
+}

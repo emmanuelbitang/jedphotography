@@ -1,0 +1,29 @@
+.bg-styles {
+  padding: 20px 50px 20px;
+}
+
+.react-images__view-image {
+  width: 710px;
+}
+
+.react-images__view-image:hover {
+  filter: none;
+}
+
+div > img:hover {
+  filter: opacity(50%);
+  transition: all 0.3s ease-in-out;
+}
+
+/* img {
+  -webkit-filter: none;
+}
+
+img:hover {
+  -webkit-filter: opacity(50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.react-images__view-image:hover {
+  -webkit-filter: none;
+} */
