@@ -1,12 +1,14 @@
 .about-paragraph {
   color: #a9a9a9;
   font-size: medium;
+  text-transform: none;
 }
 .about-list {
   margin-left: 40px;
   margin-top: 20px;
   color: #a9a9a9;
   font-size: medium;
+  text-transform: none;
 }
 
 .container {
@@ -14,8 +16,7 @@
 
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1.5fr;
-  grid-template-areas: "sidebar main";
-  text-transform: uppercase;
+  grid-template-areas: 'sidebar main';
   padding: 20px 50px 50px;
 }
 
@@ -52,8 +53,8 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 1.2fr 2.2fr;
     grid-template-areas:
-      "sidebar"
-      "main";
+      'sidebar'
+      'main';
   }
 
   .about-photographer {

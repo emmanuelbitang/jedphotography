@@ -1,7 +1,7 @@
-import React from "react";
-import "./contact.css";
-import photo from "./photo/model.jpg";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import './contact.css';
+import photo from './photo/model.jpg';
+import Fade from 'react-reveal/Fade';
 
 function Contact() {
   return (
@@ -9,49 +9,55 @@ function Contact() {
       <div class="container">
         <main>
           <div class="text-container">
-            <form>
-              <label for="fname">Name</label>
+            <form
+              name="contact v1"
+              method="post"
+              data-netlify="true"
+              onSubmit="Submit"
+            >
+              <input type="hidden" name="form-name" value="contact v1" />
+              <label for="name">Name</label>
               <input
                 type="text"
-                id="fname"
-                name="firstname"
+                id="name"
+                name="name"
                 placeholder="Your name.."
                 required
               />
 
-              <label for="lname">Email</label>
+              <label for="email-name">Email</label>
               <input
-                id="lname"
-                name="lastname"
+                id="email-name"
+                name="email-name"
                 type="email"
                 placeholder="Your Email.."
                 required
               />
 
-              <label for="subject">Message</label>
+              <label for="message">Message</label>
               <textarea
-                id="subject"
-                name="subject"
+                id="message"
+                name="message"
                 placeholder="Say something.."
                 required
               ></textarea>
 
-              <input type="submit" value="Submit" />
+              <button type="submit">Submit</button>
             </form>
             <div class="contact-info">
               <div class="info-email">
-                <b>Contact:</b>
+                <b>CONTACT:</b>
                 <ul class="info-list">
-                  <li>e-mail:</li>
+                  <li>E-mail:</li>
                   <li>jedphotography1@gmail.com</li>
                 </ul>
                 <ul class="info-list">
-                  <li>phone number:</li>
+                  <li>Phone number:</li>
                   <li> (+63)977 821 8479</li>
                 </ul>
               </div>
               <div class="info-social">
-                <b>Stay updated:</b>
+                <b>STAY UPDATED:</b>
                 <ul class="info-list">
                   <li>Follow us on:</li>
                   <li>Facebook:</li>

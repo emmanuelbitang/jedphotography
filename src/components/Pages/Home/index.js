@@ -1,8 +1,9 @@
-import React, { useState, useCallback } from "react";
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import { fashion } from "./photos";
-import "./Gallery.css";
+import React, { useState, useCallback } from 'react';
+import Gallery from 'react-photo-gallery';
+import Carousel, { Modal, ModalGateway } from 'react-images';
+import { fashion } from './photos';
+import './Gallery.css';
+import Fade from 'react-reveal/Fade';
 
 function Home() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -20,17 +21,19 @@ function Home() {
 
   return (
     <div className="bg-styles">
-      <Gallery
-        photos={fashion}
-        onClick={openLightbox}
-        direction="column"
-        margin="15"
-      />
+      <Fade>
+        <Gallery
+          photos={fashion}
+          onClick={openLightbox}
+          direction="column"
+          margin="15"
+        />
+      </Fade>
+
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
             <Carousel
-              className="test"
               currentIndex={currentImage}
               views={fashion.map((x) => ({
                 ...x,
