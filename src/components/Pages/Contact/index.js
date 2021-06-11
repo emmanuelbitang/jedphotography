@@ -10,12 +10,12 @@ function Contact() {
         <main>
           <div class="text-container">
             <form
-              name="contact v1"
-              method="post"
+              name="contact"
+              method="POST"
               data-netlify="true"
               onSubmit="Submit"
             >
-              <input type="hidden" name="form-name" value="contact v1" />
+              <input type="hidden" name="form-name" value="contact" />
               <label for="name">Name</label>
               <input
                 type="text"
