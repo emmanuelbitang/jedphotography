@@ -4,12 +4,21 @@ import photo from './photo/model.jpg';
 import Fade from 'react-reveal/Fade';
 
 function Contact() {
+  const showSuccess = (e) => {
+    alert('Thank you for contacting us!');
+    e.preventDefault();
+  };
   return (
     <>
       <div class="container">
         <main>
           <div class="text-container">
-            <form name="contact" method="POST" data-netlify="true">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              onSubmit={showSuccess}
+            >
               <input type="hidden" name="form-name" value="contact" />
               <label for="name">Name</label>
               <input
