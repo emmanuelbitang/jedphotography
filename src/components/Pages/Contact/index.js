@@ -9,12 +9,7 @@ function Contact() {
       <div class="container">
         <main>
           <div class="text-container">
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              onSubmit="Submit"
-            >
+            <form name="contact" method="POST" netlify>
               <input type="hidden" name="form-name" value="contact" />
               <label for="name">Name</label>
               <input
@@ -25,10 +20,10 @@ function Contact() {
                 required
               />
 
-              <label for="email-name">Email</label>
+              <label for="email">Email</label>
               <input
-                id="email-name"
-                name="email-name"
+                id="emai"
+                name="email"
                 type="email"
                 placeholder="Your Email.."
                 required
