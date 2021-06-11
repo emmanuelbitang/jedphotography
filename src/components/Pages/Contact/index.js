@@ -11,27 +11,6 @@ function Contact() {
           <div class="text-container">
             <form name="contact" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
-              <p>
-                <label>
-                  Your Name: <input type="text" name="name" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Your Email: <input type="email" name="email" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Message: <textarea name="message"></textarea>
-                </label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
-            </form>
-            {/* <form name="contact" method="POST" netlify>
-              <input type="hidden" name="form-name" value="contact" />
               <label for="name">Name</label>
               <input
                 type="text"
@@ -59,7 +38,7 @@ function Contact() {
               ></textarea>
 
               <button type="submit">Submit</button>
-            </form> */}
+            </form>
             <div class="contact-info">
               <div class="info-email">
                 <b>CONTACT:</b>
