@@ -4,9 +4,8 @@ import photo from './photo/model.jpg';
 import Fade from 'react-reveal/Fade';
 
 function Contact() {
-  const showSuccess = (e) => {
+  const showSuccess = () => {
     alert('Thank you for contacting us!');
-    e.preventDefault();
   };
   return (
     <>
